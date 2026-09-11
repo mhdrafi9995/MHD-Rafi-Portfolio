@@ -3,6 +3,39 @@
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Theme Toggle Logic (Default: Dark Mode)
+  const themeToggle = document.getElementById('themeToggle');
+  const mobileThemeToggle = document.getElementById('mobileThemeToggle');
+
+  const updateThemeIcons = (theme) => {
+    const iconClass = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+    [themeToggle, mobileThemeToggle].forEach(btn => {
+      if (btn) {
+        const icon = btn.querySelector('i');
+        if (icon) icon.className = iconClass;
+      }
+    });
+  };
+
+  const setTheme = (theme) => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    updateThemeIcons(theme);
+  };
+
+  // Set default to 'dark' mode as requested
+  const initialTheme = localStorage.getItem('theme') || 'dark';
+  setTheme(initialTheme);
+
+  const toggleTheme = () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+  };
+
+  if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+  if (mobileThemeToggle) mobileThemeToggle.addEventListener('click', toggleTheme);
+
   // Mobile Navigation Toggle
   const menuToggle = document.getElementById('menuToggle');
   const mobileNav = document.getElementById('mobileNav');
