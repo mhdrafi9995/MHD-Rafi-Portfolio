@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammed Rafi — Digital Marketing Professional Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Muhammed Rafi, a Digital Marketing Professional specializing in Meta Ads, Google Ads, SEO, Social Media Marketing, and Brand Growth.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232563eb'/><text x='50%' y='62%' font-size='50' font-weight='bold' fill='white' text-anchor='middle'>MR</text></svg>">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ==========================================
+       HEADER / NAVBAR
+       ========================================== -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#home" class="logo">
+        <div class="logo-icon">MR</div>
+        <div class="logo-text">
+          <h1>Muhammed Rafi</h1>
+          <span>Digital Marketer & Developer</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="https://wa.me/919747710360" target="_blank" class="btn-talk">
+        Let's Talk <i class="fa-solid fa-paper-plane" style="font-size: 0.8rem;"></i>
+      </a>
+
+      <button class="mobile-menu-btn" id="menuToggle" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home" onclick="closeMobileNav()">Home</a>
+    <a href="#about" onclick="closeMobileNav()">About</a>
+    <a href="#services" onclick="closeMobileNav()">Services</a>
+    <a href="#projects" onclick="closeMobileNav()">Projects</a>
+    <a href="#skills" onclick="closeMobileNav()">Skills</a>
+    <a href="#contact" onclick="closeMobileNav()">Contact</a>
+  </div>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-badge">Hello, I'm</span>
+        <h1 class="hero-name">Muhammed Rafi</h1>
+        <h2 class="hero-role">Digital Marketing Professional <span style="font-size:0.6em; font-weight:normal;">| UI/UX
+            & Web/App Dev</span></h2>
+        <p class="hero-bio">
+          I help brands achieve sustainable growth through data-driven digital marketing, while bringing their ideas to
+          life with high-quality web and mobile applications.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">
+            Get In Touch <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#projects" class="btn-secondary">
+            View My Work <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/919995926080" target="_blank" class="social-icon" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://x.com" target="_blank" class="social-icon" aria-label="X Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Visual with User Photo -->
+      <div class="hero-visual">
+        <div class="hero-blob-bg"></div>
+        <div class="hero-image-wrapper">
+          <img src="assets/images/profile.jpg" alt="Muhammed Rafi - Digital Marketing Professional">
+        </div>
+        <div class="hero-handwriting-tag">
+          <span class="handwriting-text">
+            <span>Marketing</span>
+            <span>Creates</span>
+            <span>Opportunities</span>
+          </span>
+          <svg class="handwriting-arrow" viewBox="0 0 100 40" fill="none" stroke="#2563eb" stroke-width="3"
+            stroke-linecap="round">
+            <path d="M10,10 Q50,35 90,15 M80,8 L92,16 L82,26" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ABOUT ME SECTION
+       ========================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title" style="margin-bottom: 1.25rem;">Turning Ideas into Real Growth</h2>
+          <p>
+            I'm a passionate digital marketer with a strong focus on performance marketing, SEO, and social media
+            growth. Alongside my marketing expertise, I design and develop custom websites and apps to ensure my clients
+            have powerful digital platforms.
+          </p>
+
+          <div class="about-badges">
+            <div class="badge-item">
+              <i class="fa-solid fa-chart-line"></i> Marketing Expert
+            </div>
+            <div class="badge-item">
+              <i class="fa-solid fa-code"></i> App/Web Dev
+            </div>
+            <div class="badge-item">
+              <i class="fa-solid fa-pen-nib"></i> UI/UX Design
+            </div>
+          </div>
+        </div>
+
+        <!-- Info Card -->
+        <div class="info-card">
+          <div class="info-list">
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="info-details">
+                <label>Location</label>
+                <p>India</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="info-details">
+                <label>Email</label>
+                <a href="mailto:rafi.mhd@gmail.com">rafi.mhd@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="info-details">
+                <label>WhatsApp</label>
+                <a href="https://wa.me/919995926080" target="_blank">+919995926080</a>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn-resume" onclick="downloadResume()">
+            Download Resume <i class="fa-solid fa-download"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       MY SKILLS SECTION
+       ========================================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <span class="section-label">My Skills</span>
+      <h2 class="section-title">Digital Marketing & Tech Skills</h2>
+
+      <div class="skills-grid">
+        <!-- Meta Ads -->
+        <div class="skill-card">
+          <div class="skill-icon-box">
+            <i class="fa-brands fa-meta"></i>
+          </div>
+          <h3>Meta Ads</h3>
+          <p>Campaigns & Optimization</p>
+        </div>
+
+        <!-- Google Ads -->
+        <div class="skill-card">
+          <div class="skill-icon-box">
+            <i class="fa-brands fa-google"></i>
+          </div>
+          <h3>Google Ads</h3>
+          <p>Search & Display</p>
+        </div>
+
+        <!-- SEO -->
+        <div class="skill-card">
+          <div class="skill-icon-box">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+          </div>
+          <h3>SEO</h3>
+          <p>Organic Growth</p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="skill-card">
+          <div class="skill-icon-box">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <h3>Social Media</h3>
+          <p>Content & Strategy</p>
+        </div>
+
+        <!-- Flutter -->
+        <div class="skill-card">
+          <div class="skill-icon-box">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <h3>Flutter</h3>
+          <p>App Development</p>
+        </div>
+
+        <!-- HTML/CSS -->
+        <div class="skill-card">
+          <div class="skill-icon-box">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <h3>HTML/CSS</h3>
+          <p>Web Development</p>
+        </div>
+
+        <!-- Figma -->
+        <div class="skill-card">
+          <div class="skill-icon-box">
+            <i class="fa-brands fa-figma"></i>
+          </div>
+          <h3>Figma</h3>
+          <p>UI/UX Design</p>
+        </div>
+
+        <!-- Canva & CapCut -->
+        <div class="skill-card">
+          <div class="skill-icon-box">
+            <i class="fa-solid fa-video"></i>
+          </div>
+          <h3>Creative Design</h3>
+          <p>Canva & CapCut</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SERVICES SECTION ("WHAT I OFFER")
+       ========================================== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="services-layout">
+        <div class="services-left">
+          <span class="section-label">Services</span>
+          <h2 class="section-title">What I Offer</h2>
+          <p class="section-desc">
+            I provide end-to-end digital marketing solutions to help your brand grow, engage and convert.
+          </p>
+
+          <a href="#contact" class="btn-primary">
+            All Services <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-chart-column"></i>
+            </div>
+            <h4>Performance Marketing</h4>
+            <p>Paid Ads & Campaign Management</p>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <h4>Social Media Marketing</h4>
+            <p>Growth & Engagement</p>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <h4>SEO</h4>
+            <p>Rankings & Organic Growth</p>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-pencil"></i>
+            </div>
+            <h4>Content Strategy</h4>
+            <p>Creative Content & Copy</p>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <h4>UI/UX & Branding</h4>
+            <p>Design & Positioning</p>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h4>Web & App Dev</h4>
+            <p>Flutter & Frontend Sites</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       RECENT PROJECTS SECTION
+       ========================================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="projects-header">
+        <div>
+          <span class="section-label">My Work</span>
+          <h2 class="section-title">Recent Projects</h2>
+        </div>
+        <a href="#contact" class="view-all-link">
+          View All Projects <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Marketing 1 -->
+        <div class="project-card"
+          onclick="openProjectModal('Meta Ads Campaign', 'Digital Marketing', 'Engineered high ROI targeted Meta Ads for an e-commerce apparel store, increasing conversions by 185% and maintaining a 4.2x ROAS.')">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+              alt="Meta Ads Campaign">
+          </div>
+          <div class="project-body">
+            <div class="project-info">
+              <h4>Meta Ads Campaign</h4>
+              <p>Digital Marketing</p>
+            </div>
+            <div class="project-arrow">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Marketing 2 -->
+        <div class="project-card"
+          onclick="openProjectModal('SEO Optimization', 'Digital Marketing', 'Implemented technical SEO, keyword optimization, and backlink authority building, ranking top #3 on competitive target keywords.')">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+              alt="SEO Optimization">
+          </div>
+          <div class="project-body">
+            <div class="project-info">
+              <h4>SEO Optimization</h4>
+              <p>Digital Marketing</p>
+            </div>
+            <div class="project-arrow">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- App Dev 1 -->
+        <div class="project-card"
+          onclick="openProjectModal('E-Commerce Mobile App', 'App Development', 'A fully functional cross-platform e-commerce app built with Flutter, featuring product catalogs, cart management, and seamless checkout.')">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=800&q=80"
+              alt="E-Commerce Mobile App">
+          </div>
+          <div class="project-body">
+            <div class="project-info">
+              <h4>E-Commerce Mobile App</h4>
+              <p>Flutter / App Dev</p>
+            </div>
+            <div class="project-arrow">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Dev 1 -->
+        <div class="project-card"
+          onclick="openProjectModal('Corporate Landing Page', 'Web Development', 'A responsive, modern landing page for a corporate client built from scratch using HTML and CSS.')">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+              alt="Corporate Landing Page">
+          </div>
+          <div class="project-body">
+            <div class="project-info">
+              <h4>Corporate Landing Page</h4>
+              <p>HTML & CSS</p>
+            </div>
+            <div class="project-arrow">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 1 -->
+        <div class="project-card"
+          onclick="openProjectModal('Social Media Campaign', 'Graphic Design', 'A series of vibrant, high-converting social media advertising posters designed using Canva and CapCut for video elements.')">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80"
+              alt="Social Media Posters">
+          </div>
+          <div class="project-body">
+            <div class="project-info">
+              <h4>Social Media Posters</h4>
+              <p>Canva & CapCut</p>
+            </div>
+            <div class="project-arrow">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 2 -->
+        <div class="project-card"
+          onclick="openProjectModal('Fintech App UI Kit', 'UI/UX Design', 'A comprehensive UI kit for a fintech application designed in Figma, including 50+ screens and a complete design system.')">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff0f?auto=format&fit=crop&w=800&q=80"
+              alt="Fintech App UI Kit">
+          </div>
+          <div class="project-body">
+            <div class="project-info">
+              <h4>Fintech App UI Kit</h4>
+              <p>Figma / UI Design</p>
+            </div>
+            <div class="project-arrow">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       EXPERIENCE & TESTIMONIALS SECTION
+       ========================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="exp-testimonials-grid">
+        <!-- Column 1: Journey Timeline -->
+        <div>
+          <span class="section-label">Experience</span>
+          <h2 class="section-title">My Journey</h2>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-role">Digital Marketing Executive</div>
+              <div class="timeline-company">DOT Jeans Company</div>
+              <div class="timeline-date">2022 — Present</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-role">Social Media & Content Creator</div>
+              <div class="timeline-company">Freelance</div>
+              <div class="timeline-date">2021 — 2022</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-role">Intern — Digital Marketing</div>
+              <div class="timeline-company">Local Business</div>
+              <div class="timeline-date">2020 — 2021</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Testimonials -->
+        <div>
+          <h2 class="section-title" style="margin-bottom: 1.5rem;">What Clients Say</h2>
+          <div class="testimonial-card">
+            <div>
+              <div class="quote-icon">“</div>
+              <p class="testimonial-text">
+                Rafi is a highly dedicated digital marketer. He helped us get great results with Meta Ads and social
+                media. His creativity and consistency really made a difference!
+              </p>
+            </div>
+
+            <div class="testimonial-author">
+              <div class="author-info">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80"
+                  alt="Fahad Rahman" class="author-avatar">
+                <div class="author-details">
+                  <h5>Fahad Rahman</h5>
+                  <span>Business Owner — Fashion Brand</span>
+                </div>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3: Artistic Graphic Card -->
+        <div class="graphic-art-card">
+          <div class="art-text">
+            <span>Let's</span><br>
+            <span>Grow</span><br>
+            <span>Together</span>
+          </div>
+          <svg class="art-swirl" viewBox="0 0 100 30" fill="none" stroke="#2563eb" stroke-width="3"
+            stroke-linecap="round">
+            <path d="M5,15 Q50,2 95,20 M10,25 Q50,30 90,10" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTACT & DARK FOOTER
+       ========================================== -->
+  <footer class="footer-contact" id="contact">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="footer-title">Let's Work Together</h2>
+          <p class="footer-desc">
+            Have a project in mind? Feel free to reach out and let's turn your digital presence into measurable growth.
+          </p>
+        </div>
+
+        <div class="footer-methods">
+          <div class="contact-pill">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div>
+              <span style="font-size:0.75rem; color:#94a3b8; display:block;">WhatsApp</span>
+              <a href="https://wa.me/919995926080" target="_blank" style="font-weight:700; color:#fff;">+91
+                9995926080</a>
+            </div>
+          </div>
+
+          <div class="contact-pill">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <span style="font-size:0.75rem; color:#94a3b8; display:block;">Email</span>
+              <a href="mailto:rc1rafi@gmail.com" style="font-weight:700; color:#fff;">rc1rafi@gmail.com</a>
+            </div>
+          </div>
+
+          <a href="https://wa.me/919995926080" target="_blank" class="btn-talk" style="margin-top:0.5rem;">
+            Send Message <i class="fa-solid fa-paper-plane"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Muhammed Rafi. All rights reserved.</p>
+        <div class="footer-tags">
+          <span>Digital Marketing</span> | <span>Meta Ads</span> | <span>SEO</span> | <span>Social Media</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       PROJECT MODAL OVERLAY
+       ========================================== -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeProjectModal()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <h3 id="modalTitle" style="font-size: 1.6rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.25rem;">
+        Project Title</h3>
+      <p id="modalCategory" style="color: var(--primary); font-weight: 700; font-size: 0.9rem; margin-bottom: 1.25rem;">
+        Category</p>
+      <p id="modalDescription"
+        style="color: var(--text-muted); line-height: 1.7; font-size: 0.98rem; margin-bottom: 2rem;">
+        Detailed description of the project case study and marketing performance results.
+      </p>
+
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="https://wa.me/919995926080" target="_blank" class="btn-primary"
+          style="padding: 10px 22px; font-size: 0.88rem;">
+          Discuss Similar Project <i class="fa-solid fa-paper-plane"></i>
+        </a>
+        <button onclick="closeProjectModal()" class="btn-secondary" style="padding: 10px 22px; font-size: 0.88rem;">
+          Close Details
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
