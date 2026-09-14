@@ -123,37 +123,3 @@ document.addEventListener('click', (e) => {
   }
 });
 
-// Download Resume Action
-function downloadResume() {
-  const resumeContent = `
-==================================================
-MUHAMMED RAFI — DIGITAL MARKETING PROFESSIONAL
-Location: India | Phone: +91 9747710360 | Email: rafi.mhd@gmail.com
-==================================================
-
-CORE SKILLS:
-- Meta Ads (Facebook & Instagram Campaigns & ROAS Optimization)
-- Google Ads (Search, Display & Performance Max)
-- Search Engine Optimization (On-Page, Off-Page & Technical SEO)
-- Social Media Strategy & Organic Growth
-- Content Strategy & Creative Copywriting
-
-EXPERIENCE:
-1. Digital Marketing Executive — DOT Jeans Company (2022 — Present)
-   - Scaled e-commerce store revenue with targeted Meta & Google Ads campaigns.
-2. Social Media & Content Creator — Freelance (2021 — 2022)
-   - Built high engagement brand campaigns for local & regional clients.
-3. Intern - Digital Marketing — Local Business (2020 — 2021)
-==================================================
-`;
-  
-  const blob = new Blob([resumeContent], { type: 'text/plain' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = 'Muhammed_Rafi_Resume.txt';
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
-}
