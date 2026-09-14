@@ -123,3 +123,26 @@ document.addEventListener('click', (e) => {
   }
 });
 
+// Toggle Projects Visibility
+function toggleProjects() {
+  const hiddenProjects = document.querySelectorAll('.hidden-project');
+  const btn = document.getElementById('toggleProjectsBtn');
+  let isShowingAll = false;
+
+  hiddenProjects.forEach(project => {
+    if (project.style.display === 'none' || project.style.display === '') {
+      project.style.display = 'flex'; // Use flex as it likely has flex layout internally, or block. Let's use flex and if layout breaks, empty string resets it. Actually '' is safer if inline style was manually set to none.
+      project.style.display = ''; // Resetting inline display none allows CSS classes to apply properly
+      isShowingAll = true;
+    } else {
+      project.style.display = 'none';
+    }
+  });
+
+  if (isShowingAll) {
+    btn.innerHTML = 'Show Less <i class="fa-solid fa-arrow-up"></i>';
+  } else {
+    btn.innerHTML = 'View All Projects <i class="fa-solid fa-arrow-right"></i>';
+  }
+}
+

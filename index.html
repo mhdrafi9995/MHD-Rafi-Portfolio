@@ -84,7 +84,8 @@
       <div class="hero-content">
         <span class="hero-badge">Hello, I'm</span>
         <h1 class="hero-name">Muhammed Rafi</h1>
-        <h2 class="hero-role">UI/UX Designer <span style="font-size:0.6em; font-weight:normal;">| Software Engineer | Web Designer | Digital Marketing</span></h2>
+        <h2 class="hero-role">Digital Marketing <span style="font-size:0.6em; font-weight:normal;">| Software Engineer |
+            Web Designer | UI/UX Designer</span></h2>
         <p class="hero-bio">
           I help brands achieve sustainable growth through data-driven digital marketing, while bringing their ideas to
           life with high-quality web and mobile applications.
@@ -198,7 +199,8 @@
             </div>
           </div>
 
-          <a href="./assets/MUHAMMED_RAFI_Resume.pdf" download="MUHAMMED_RAFI_Resume.pdf" class="btn-resume" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
+          <a href="./assets/MUHAMMED_RAFI_Resume.pdf" download="MUHAMMED_RAFI_Resume.pdf" class="btn-resume"
+            style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
             Download Resume <i class="fa-solid fa-download"></i>
           </a>
         </div>
@@ -393,15 +395,12 @@
           <span class="section-label">My Work</span>
           <h2 class="section-title">Recent Projects</h2>
         </div>
-        <a href="#contact" class="view-all-link">
-          View All Projects <i class="fa-solid fa-arrow-right"></i>
-        </a>
       </div>
 
-      <div class="projects-grid">
+      <div class="projects-grid" id="projectsGrid">
         <!-- Project 1 -->
         <div class="project-card"
-          onclick="openProjectModal('Geojit App', 'App Development', 'Flutter-based mobile application projects involving UI/UX and development.')">
+          onclick="openProjectModal('Geojit App', 'Mobile App / UI/UX / Flutter', 'Flutter-based mobile application projects involving UI/UX and development.')">
           <div class="project-image">
             <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=800&q=80"
               alt="Geojit App">
@@ -409,7 +408,7 @@
           <div class="project-body">
             <div class="project-info">
               <h4>Geojit App</h4>
-              <p>App Development</p>
+              <p>Mobile App / UI/UX / Flutter</p>
             </div>
             <div class="project-arrow">
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -419,7 +418,7 @@
 
         <!-- Project 2 -->
         <div class="project-card"
-          onclick="openProjectModal('Agriconnect App', 'App Development', 'Flutter-based mobile application projects involving UI/UX and development.')">
+          onclick="openProjectModal('Agriconnect App', 'Mobile App / UI/UX / Flutter', 'Flutter-based mobile application projects involving UI/UX and development.')">
           <div class="project-image">
             <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
               alt="Agriconnect App">
@@ -427,7 +426,7 @@
           <div class="project-body">
             <div class="project-info">
               <h4>Agriconnect App</h4>
-              <p>App Development</p>
+              <p>Mobile App / UI/UX / Flutter</p>
             </div>
             <div class="project-arrow">
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -436,7 +435,7 @@
         </div>
 
         <!-- Project 3 -->
-        <div class="project-card"
+        <div class="project-card hidden-project" style="display: none;"
           onclick="openProjectModal('UAE Document Clearance Website', 'Web Development', 'Responsive service and information websites with modern UI and enquiry-focused experiences.')">
           <div class="project-image">
             <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
@@ -454,10 +453,10 @@
         </div>
 
         <!-- Project 4 -->
-        <div class="project-card"
+        <div class="project-card hidden-project" style="display: none;"
           onclick="openProjectModal('Auditorium Website', 'Web Development', 'Responsive service and information websites with modern UI and enquiry-focused experiences.')">
           <div class="project-image">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+            <img src="assets/images/auditorium_website.jpg"
               alt="Auditorium Website">
           </div>
           <div class="project-body">
@@ -472,10 +471,10 @@
         </div>
 
         <!-- Project 5 -->
-        <div class="project-card"
+        <div class="project-card hidden-project" style="display: none;"
           onclick="openProjectModal('Find Mobile Seller App', 'UI/UX Design', 'User flows, wireframes, high-fidelity interfaces, and interactive product concepts.')">
           <div class="project-image">
-            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80"
+            <img src="assets/images/find_mobile_seller.jpg"
               alt="Find Mobile Seller App">
           </div>
           <div class="project-body">
@@ -490,10 +489,10 @@
         </div>
 
         <!-- Project 6 -->
-        <div class="project-card"
+        <div class="project-card hidden-project" style="display: none;"
           onclick="openProjectModal('E-Commerce Web', 'UI/UX Design', 'User flows, wireframes, high-fidelity interfaces, and interactive product concepts.')">
           <div class="project-image">
-            <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff0f?auto=format&fit=crop&w=800&q=80"
+            <img src="assets/images/ecommerce_web.jpg"
               alt="E-Commerce Web">
           </div>
           <div class="project-body">
@@ -508,10 +507,10 @@
         </div>
 
         <!-- Project 7 -->
-        <div class="project-card"
+        <div class="project-card hidden-project" style="display: none;"
           onclick="openProjectModal('Music App', 'UI/UX Design', 'User flows, wireframes, high-fidelity interfaces, and interactive product concepts.')">
           <div class="project-image">
-            <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=800&q=80"
+            <img src="assets/images/music_app.jpg"
               alt="Music App">
           </div>
           <div class="project-body">
@@ -524,6 +523,30 @@
             </div>
           </div>
         </div>
+
+        <!-- Project 8 -->
+        <div class="project-card hidden-project" style="display: none;"
+          onclick="openProjectModal('Poster Creation', 'Creative Design', 'Creative poster designs and social media creatives.')">
+          <div class="project-image">
+            <img src="assets/images/poster_creation.jpg"
+              alt="Poster Creation">
+          </div>
+          <div class="project-body">
+            <div class="project-info">
+              <h4>Poster Creation</h4>
+              <p>Creative Design</p>
+            </div>
+            <div class="project-arrow">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <button id="toggleProjectsBtn" class="btn-primary" onclick="toggleProjects()" style="cursor: pointer;">
+          View All Projects <i class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
     </div>
   </section>
