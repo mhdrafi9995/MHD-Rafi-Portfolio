@@ -22,6 +22,42 @@
 <body>
 
   <!-- ==========================================
+       SMOOTH PRELOADER
+       ========================================== -->
+  <div id="sitePreloader" class="site-preloader" aria-hidden="true">
+    <div class="preloader-content">
+      <div class="preloader-logo-ring">
+        <svg viewBox="0 0 100 100" class="preloader-svg">
+          <circle cx="50" cy="50" r="42" class="preloader-circle-bg" />
+          <circle cx="50" cy="50" r="42" class="preloader-circle-spin" />
+        </svg>
+        <span class="preloader-monogram">MR</span>
+      </div>
+      <div class="preloader-bar-wrap">
+        <div class="preloader-bar" id="preloaderBar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       SMOOTH FLOATING 3D BACKGROUND ELEMENTS
+       ========================================== -->
+  <div class="ambient-background" aria-hidden="true">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+    <div class="floating-geo geo-1">
+      <div class="geo-inner"></div>
+    </div>
+    <div class="floating-geo geo-2">
+      <div class="geo-inner"></div>
+    </div>
+    <div class="floating-geo geo-3">
+      <div class="geo-inner"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================
        HEADER / NAVBAR
        ========================================== -->
   <header class="header">
@@ -82,16 +118,16 @@
   <section class="hero" id="home">
     <div class="container hero-grid">
       <div class="hero-content">
-        <span class="hero-badge">Hello, I'm</span>
-        <h1 class="hero-name">Muhammed Rafi</h1>
-        <h2 class="hero-role">Digital Marketing <span style="font-size:0.6em; font-weight:normal;">| Software Engineer |
+        <span class="hero-badge hero-reveal" style="--reveal-delay: 0.1s;">Hello, I'm</span>
+        <h1 class="hero-name hero-reveal" style="--reveal-delay: 0.25s;">Muhammed Rafi</h1>
+        <h2 class="hero-role hero-reveal" style="--reveal-delay: 0.4s;">Digital Marketing <span style="font-size:0.6em; font-weight:normal;">| Software Engineer |
             Web Designer | UI/UX Designer</span></h2>
-        <p class="hero-bio">
+        <p class="hero-bio hero-reveal" style="--reveal-delay: 0.55s;">
           I help brands achieve sustainable growth through data-driven digital marketing, while bringing their ideas to
           life with high-quality web and mobile applications.
         </p>
 
-        <div class="hero-actions">
+        <div class="hero-actions hero-reveal" style="--reveal-delay: 0.7s;">
           <a href="#contact" class="btn-primary">
             Get In Touch <i class="fa-solid fa-arrow-right"></i>
           </a>
@@ -100,7 +136,7 @@
           </a>
         </div>
 
-        <div class="social-links">
+        <div class="social-links hero-reveal" style="--reveal-delay: 0.85s;">
           <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
             <i class="fa-brands fa-instagram"></i>
           </a>
@@ -117,7 +153,7 @@
       </div>
 
       <!-- Right Visual with User Photo -->
-      <div class="hero-visual">
+      <div class="hero-visual hero-reveal" style="--reveal-delay: 0.4s;">
         <div class="hero-blob-bg"></div>
         <div class="hero-image-wrapper">
           <img src="assets/images/profile.jpg" alt="Muhammed Rafi - Digital Marketing Professional">
@@ -217,65 +253,137 @@
       <h2 class="section-title">Digital Marketing & Tech Skills</h2>
 
       <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-icon-box">
-            <i class="fa-brands fa-figma"></i>
+        <div class="skill-card" data-progress="94">
+          <div class="skill-card-top">
+            <div class="skill-icon-box">
+              <i class="fa-brands fa-figma"></i>
+            </div>
+            <div class="skill-progress-ring" data-value="94" title="94% Proficiency">
+              <svg viewBox="0 0 44 44" class="progress-ring-svg" aria-hidden="true">
+                <circle class="progress-ring-track" cx="22" cy="22" r="17" />
+                <circle class="progress-ring-bar" cx="22" cy="22" r="17" />
+              </svg>
+              <span class="skill-progress-text">0%</span>
+            </div>
           </div>
           <h3>UI/UX Design</h3>
           <p>Figma, Adobe XD, UI/UX</p>
         </div>
 
-        <div class="skill-card">
-          <div class="skill-icon-box">
-            <i class="fa-solid fa-mobile-screen-button"></i>
+        <div class="skill-card" data-progress="90">
+          <div class="skill-card-top">
+            <div class="skill-icon-box">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <div class="skill-progress-ring" data-value="90" title="90% Proficiency">
+              <svg viewBox="0 0 44 44" class="progress-ring-svg" aria-hidden="true">
+                <circle class="progress-ring-track" cx="22" cy="22" r="17" />
+                <circle class="progress-ring-bar" cx="22" cy="22" r="17" />
+              </svg>
+              <span class="skill-progress-text">0%</span>
+            </div>
           </div>
           <h3>App Dev</h3>
           <p>Flutter, Dart</p>
         </div>
 
-        <div class="skill-card">
-          <div class="skill-icon-box">
-            <i class="fa-brands fa-html5"></i>
+        <div class="skill-card" data-progress="92">
+          <div class="skill-card-top">
+            <div class="skill-icon-box">
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="skill-progress-ring" data-value="92" title="92% Proficiency">
+              <svg viewBox="0 0 44 44" class="progress-ring-svg" aria-hidden="true">
+                <circle class="progress-ring-track" cx="22" cy="22" r="17" />
+                <circle class="progress-ring-bar" cx="22" cy="22" r="17" />
+              </svg>
+              <span class="skill-progress-text">0%</span>
+            </div>
           </div>
           <h3>Web Design</h3>
           <p>HTML, CSS</p>
         </div>
 
-        <div class="skill-card">
-          <div class="skill-icon-box">
-            <i class="fa-brands fa-meta"></i>
+        <div class="skill-card" data-progress="96">
+          <div class="skill-card-top">
+            <div class="skill-icon-box">
+              <i class="fa-brands fa-meta"></i>
+            </div>
+            <div class="skill-progress-ring" data-value="96" title="96% Proficiency">
+              <svg viewBox="0 0 44 44" class="progress-ring-svg" aria-hidden="true">
+                <circle class="progress-ring-track" cx="22" cy="22" r="17" />
+                <circle class="progress-ring-bar" cx="22" cy="22" r="17" />
+              </svg>
+              <span class="skill-progress-text">0%</span>
+            </div>
           </div>
           <h3>Digital Marketing</h3>
           <p>Meta Ads, Social Media</p>
         </div>
 
-        <div class="skill-card">
-          <div class="skill-icon-box">
-            <i class="fa-solid fa-palette"></i>
+        <div class="skill-card" data-progress="88">
+          <div class="skill-card-top">
+            <div class="skill-icon-box">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <div class="skill-progress-ring" data-value="88" title="88% Proficiency">
+              <svg viewBox="0 0 44 44" class="progress-ring-svg" aria-hidden="true">
+                <circle class="progress-ring-track" cx="22" cy="22" r="17" />
+                <circle class="progress-ring-bar" cx="22" cy="22" r="17" />
+              </svg>
+              <span class="skill-progress-text">0%</span>
+            </div>
           </div>
           <h3>Creative Tools</h3>
           <p>Canva, CapCut, Photoshop</p>
         </div>
 
-        <div class="skill-card">
-          <div class="skill-icon-box">
-            <i class="fa-solid fa-network-wired"></i>
+        <div class="skill-card" data-progress="85">
+          <div class="skill-card-top">
+            <div class="skill-icon-box">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <div class="skill-progress-ring" data-value="85" title="85% Proficiency">
+              <svg viewBox="0 0 44 44" class="progress-ring-svg" aria-hidden="true">
+                <circle class="progress-ring-track" cx="22" cy="22" r="17" />
+                <circle class="progress-ring-bar" cx="22" cy="22" r="17" />
+              </svg>
+              <span class="skill-progress-text">0%</span>
+            </div>
           </div>
           <h3>State Management</h3>
           <p>GetX, Riverpod, Provider</p>
         </div>
 
-        <div class="skill-card">
-          <div class="skill-icon-box">
-            <i class="fa-solid fa-server"></i>
+        <div class="skill-card" data-progress="90">
+          <div class="skill-card-top">
+            <div class="skill-icon-box">
+              <i class="fa-solid fa-server"></i>
+            </div>
+            <div class="skill-progress-ring" data-value="90" title="90% Proficiency">
+              <svg viewBox="0 0 44 44" class="progress-ring-svg" aria-hidden="true">
+                <circle class="progress-ring-track" cx="22" cy="22" r="17" />
+                <circle class="progress-ring-bar" cx="22" cy="22" r="17" />
+              </svg>
+              <span class="skill-progress-text">0%</span>
+            </div>
           </div>
           <h3>API & Integrations</h3>
           <p>API Integration</p>
         </div>
 
-        <div class="skill-card">
-          <div class="skill-icon-box">
-            <i class="fa-solid fa-camera"></i>
+        <div class="skill-card" data-progress="86">
+          <div class="skill-card-top">
+            <div class="skill-icon-box">
+              <i class="fa-solid fa-camera"></i>
+            </div>
+            <div class="skill-progress-ring" data-value="86" title="86% Proficiency">
+              <svg viewBox="0 0 44 44" class="progress-ring-svg" aria-hidden="true">
+                <circle class="progress-ring-track" cx="22" cy="22" r="17" />
+                <circle class="progress-ring-bar" cx="22" cy="22" r="17" />
+              </svg>
+              <span class="skill-progress-text">0%</span>
+            </div>
           </div>
           <h3>Visual Content</h3>
           <p>Product Photography</p>
@@ -578,6 +686,402 @@
           </button>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PROFESSIONAL WORK EXPERIENCE SECTION
+       ========================================== -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="experience-header">
+        <span class="section-label">Experience</span>
+        <h2 class="section-title">Professional Work Experience</h2>
+        <p class="section-desc">
+          A documented track record across digital marketing, UI/UX design, mobile app development, and software engineering.
+        </p>
+      </div>
+
+      <div class="exp-timeline">
+        <!-- Experience 1: dotjeanscompany -->
+        <div class="exp-timeline-item">
+          <div class="exp-timeline-marker">
+            <div class="exp-marker-node active-node" aria-hidden="true">
+              <i class="fa-solid fa-bullhorn"></i>
+            </div>
+            <div class="exp-marker-line"></div>
+          </div>
+
+          <div class="exp-timeline-content">
+            <article class="exp-card">
+              <div class="exp-card-header">
+                <div class="exp-brand-info">
+                  <div class="exp-company-logo exp-logo-dot" title="dotjeanscompany">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="exp-logo-svg" role="img" aria-label="dotjeanscompany logo">
+                      <rect width="48" height="48" rx="14" fill="url(#exp-grad-dot)"/>
+                      <circle cx="24" cy="24" r="14" stroke="#60a5fa" stroke-width="2" stroke-dasharray="3 3"/>
+                      <text x="24" y="29" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="-0.5">DJ</text>
+                      <circle cx="34" cy="14" r="4" fill="#38bdf8"/>
+                      <defs>
+                        <linearGradient id="exp-grad-dot" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#1e3a8a"/>
+                          <stop offset="1" stop-color="#2563eb"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="exp-title-details">
+                    <div class="exp-role-row">
+                      <h3 class="exp-role-title">Digital Marketing Executive</h3>
+                      <span class="exp-status-pill exp-status-active">
+                        <span class="exp-live-dot"></span> Present
+                      </span>
+                    </div>
+                    <div class="exp-company-meta">
+                      <span class="exp-company-name"><i class="fa-solid fa-building"></i> dotjeanscompany</span>
+                      <span class="exp-divider">•</span>
+                      <span class="exp-duration-text"><i class="fa-regular fa-calendar-days"></i> July 2026 – Present</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="exp-badges-cluster">
+                  <span class="exp-tag-pill exp-type-pill"><i class="fa-solid fa-briefcase"></i> Full-time</span>
+                  <span class="exp-tag-pill exp-mode-pill"><i class="fa-solid fa-building-user"></i> On-site</span>
+                  <span class="exp-tag-pill exp-loc-pill"><i class="fa-solid fa-location-dot"></i> Nilambur, Kerala, India</span>
+                </div>
+              </div>
+
+              <div class="exp-card-body">
+                <h4 class="exp-resp-heading"><i class="fa-solid fa-list-check"></i> Key Responsibilities:</h4>
+                <div class="exp-resp-grid">
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Digital Marketing</span>
+                  </div>
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Social Media Management</span>
+                  </div>
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Website Management and SEO</span>
+                  </div>
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>UI/UX Design</span>
+                  </div>
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Web Development</span>
+                  </div>
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Digital Advertising and Brand Promotion</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Experience 2: FindHub Portal -->
+        <div class="exp-timeline-item">
+          <div class="exp-timeline-marker">
+            <div class="exp-marker-node active-node" aria-hidden="true">
+              <i class="fa-solid fa-compass-drafting"></i>
+            </div>
+            <div class="exp-marker-line"></div>
+          </div>
+
+          <div class="exp-timeline-content">
+            <article class="exp-card">
+              <div class="exp-card-header">
+                <div class="exp-brand-info">
+                  <div class="exp-company-logo exp-logo-findhub" title="FindHub Portal">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="exp-logo-svg" role="img" aria-label="FindHub Portal logo">
+                      <rect width="48" height="48" rx="14" fill="url(#exp-grad-findhub)"/>
+                      <circle cx="24" cy="24" r="14" stroke="#2dd4bf" stroke-width="2" stroke-dasharray="3 3"/>
+                      <text x="24" y="29" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="-0.5">FH</text>
+                      <circle cx="34" cy="14" r="4" fill="#34d399"/>
+                      <defs>
+                        <linearGradient id="exp-grad-findhub" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#0f766e"/>
+                          <stop offset="1" stop-color="#06b6d4"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="exp-title-details">
+                    <div class="exp-role-row">
+                      <h3 class="exp-role-title">UI/UX Designer</h3>
+                      <span class="exp-status-pill exp-status-active">
+                        <span class="exp-live-dot"></span> Present
+                      </span>
+                    </div>
+                    <div class="exp-company-meta">
+                      <span class="exp-company-name"><i class="fa-solid fa-building"></i> FindHub Portal</span>
+                      <span class="exp-divider">•</span>
+                      <span class="exp-duration-text"><i class="fa-regular fa-calendar-days"></i> July 2024 – Present</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="exp-badges-cluster">
+                  <span class="exp-tag-pill exp-type-pill"><i class="fa-solid fa-briefcase"></i> Full-time</span>
+                  <span class="exp-tag-pill exp-mode-pill exp-mode-remote"><i class="fa-solid fa-laptop-code"></i> Remote</span>
+                  <span class="exp-tag-pill exp-loc-pill"><i class="fa-solid fa-location-dot"></i> Dubai, United Arab Emirates</span>
+                </div>
+              </div>
+
+              <div class="exp-card-body">
+                <h4 class="exp-resp-heading"><i class="fa-solid fa-list-check"></i> Key Responsibilities:</h4>
+                <div class="exp-resp-grid">
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>UI/UX Design</span>
+                  </div>
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Website and Mobile App Design</span>
+                  </div>
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Wireframing and Prototyping</span>
+                  </div>
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Figma Design</span>
+                  </div>
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>User Experience Optimization</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Experience 3: Toffee Ride -->
+        <div class="exp-timeline-item">
+          <div class="exp-timeline-marker">
+            <div class="exp-marker-node" aria-hidden="true">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <div class="exp-marker-line"></div>
+          </div>
+
+          <div class="exp-timeline-content">
+            <article class="exp-card">
+              <div class="exp-card-header">
+                <div class="exp-brand-info">
+                  <div class="exp-company-logo exp-logo-toffee" title="Toffee Ride">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="exp-logo-svg" role="img" aria-label="Toffee Ride logo">
+                      <rect width="48" height="48" rx="14" fill="url(#exp-grad-toffee)"/>
+                      <circle cx="24" cy="24" r="14" stroke="#fb923c" stroke-width="2" stroke-dasharray="3 3"/>
+                      <text x="24" y="29" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="-0.5">TR</text>
+                      <circle cx="34" cy="14" r="4" fill="#fbbf24"/>
+                      <defs>
+                        <linearGradient id="exp-grad-toffee" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#c2410c"/>
+                          <stop offset="1" stop-color="#f97316"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="exp-title-details">
+                    <div class="exp-role-row">
+                      <h3 class="exp-role-title">UI/UX Designer & Flutter Developer</h3>
+                    </div>
+                    <div class="exp-company-meta">
+                      <span class="exp-company-name"><i class="fa-solid fa-building"></i> Toffee Ride</span>
+                      <span class="exp-divider">•</span>
+                      <span class="exp-duration-text"><i class="fa-regular fa-calendar-days"></i> July 2023 – April 2024</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="exp-badges-cluster">
+                  <span class="exp-tag-pill exp-type-pill"><i class="fa-solid fa-briefcase"></i> Full-time</span>
+                  <span class="exp-tag-pill exp-mode-pill"><i class="fa-solid fa-building-user"></i> On-site</span>
+                  <span class="exp-tag-pill exp-loc-pill"><i class="fa-solid fa-location-dot"></i> Ernakulam, Kerala, India</span>
+                </div>
+              </div>
+
+              <div class="exp-card-body">
+                <h4 class="exp-resp-heading"><i class="fa-solid fa-list-check"></i> Key Responsibilities:</h4>
+                <div class="exp-resp-grid">
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>UI/UX Design</span>
+                  </div>
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Flutter App Development</span>
+                  </div>
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Dart Programming</span>
+                  </div>
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>REST API Integration</span>
+                  </div>
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Figma and Adobe Photoshop</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Experience 4: LevelX -->
+        <div class="exp-timeline-item">
+          <div class="exp-timeline-marker">
+            <div class="exp-marker-node" aria-hidden="true">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="exp-marker-line"></div>
+          </div>
+
+          <div class="exp-timeline-content">
+            <article class="exp-card">
+              <div class="exp-card-header">
+                <div class="exp-brand-info">
+                  <div class="exp-company-logo exp-logo-levelx" title="LevelX">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="exp-logo-svg" role="img" aria-label="LevelX logo">
+                      <rect width="48" height="48" rx="14" fill="url(#exp-grad-levelx)"/>
+                      <circle cx="24" cy="24" r="14" stroke="#c084fc" stroke-width="2" stroke-dasharray="3 3"/>
+                      <text x="24" y="29" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="-0.5">LX</text>
+                      <circle cx="34" cy="14" r="4" fill="#e879f9"/>
+                      <defs>
+                        <linearGradient id="exp-grad-levelx" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#6b21a8"/>
+                          <stop offset="1" stop-color="#9333ea"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="exp-title-details">
+                    <div class="exp-role-row">
+                      <h3 class="exp-role-title">Software Development Engineer Intern</h3>
+                    </div>
+                    <div class="exp-company-meta">
+                      <span class="exp-company-name"><i class="fa-solid fa-building"></i> LevelX</span>
+                      <span class="exp-divider">•</span>
+                      <span class="exp-duration-text"><i class="fa-regular fa-calendar-days"></i> September 2022 – April 2023</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="exp-badges-cluster">
+                  <span class="exp-tag-pill exp-type-pill exp-type-intern"><i class="fa-solid fa-graduation-cap"></i> Internship</span>
+                  <span class="exp-tag-pill exp-mode-pill"><i class="fa-solid fa-building-user"></i> On-site</span>
+                  <span class="exp-tag-pill exp-loc-pill"><i class="fa-solid fa-location-dot"></i> Kozhikode, Kerala, India</span>
+                </div>
+              </div>
+
+              <div class="exp-card-body">
+                <h4 class="exp-resp-heading"><i class="fa-solid fa-list-check"></i> Key Responsibilities:</h4>
+                <div class="exp-resp-grid">
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>HTML, CSS and Tailwind CSS</span>
+                  </div>
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Flutter and Dart</span>
+                  </div>
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>REST API Integration</span>
+                  </div>
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Git and Figma</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Experience 5: Sky Graphics -->
+        <div class="exp-timeline-item">
+          <div class="exp-timeline-marker">
+            <div class="exp-marker-node" aria-hidden="true">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <div class="exp-marker-line exp-marker-line-last"></div>
+          </div>
+
+          <div class="exp-timeline-content">
+            <article class="exp-card">
+              <div class="exp-card-header">
+                <div class="exp-brand-info">
+                  <div class="exp-company-logo exp-logo-sky" title="Sky Graphics">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="exp-logo-svg" role="img" aria-label="Sky Graphics logo">
+                      <rect width="48" height="48" rx="14" fill="url(#exp-grad-sky)"/>
+                      <circle cx="24" cy="24" r="14" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3 3"/>
+                      <text x="24" y="29" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="-0.5">SG</text>
+                      <circle cx="34" cy="14" r="4" fill="#7dd3fc"/>
+                      <defs>
+                        <linearGradient id="exp-grad-sky" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#0284c7"/>
+                          <stop offset="1" stop-color="#38bdf8"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="exp-title-details">
+                    <div class="exp-role-row">
+                      <h3 class="exp-role-title">Graphic Designer</h3>
+                    </div>
+                    <div class="exp-company-meta">
+                      <span class="exp-company-name"><i class="fa-solid fa-building"></i> Sky Graphics</span>
+                      <span class="exp-divider">•</span>
+                      <span class="exp-duration-text"><i class="fa-regular fa-calendar-days"></i> March 2018 – February 2019</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="exp-badges-cluster">
+                  <span class="exp-tag-pill exp-type-pill"><i class="fa-solid fa-briefcase"></i> Full-time</span>
+                  <span class="exp-tag-pill exp-mode-pill"><i class="fa-solid fa-building-user"></i> On-site</span>
+                  <span class="exp-tag-pill exp-loc-pill"><i class="fa-solid fa-location-dot"></i> India</span>
+                </div>
+              </div>
+
+              <div class="exp-card-body">
+                <h4 class="exp-resp-heading"><i class="fa-solid fa-list-check"></i> Key Responsibilities:</h4>
+                <div class="exp-resp-grid">
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Graphic Design</span>
+                  </div>
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Adobe Photoshop</span>
+                  </div>
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Creative Visual Design</span>
+                  </div>
+                  <div class="exp-resp-item">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Branding and Design</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </section>
 
   <!-- ==========================================
@@ -752,6 +1256,10 @@
       </div>
     </div>
   </div>
+
+  <!-- Subtle Glowing Custom Cursor (Desktop Only) -->
+  <div class="custom-cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+  <div class="custom-cursor-dot" id="cursorDot" aria-hidden="true"></div>
 
   <!-- JavaScript -->
   <script src="script.js"></script>
